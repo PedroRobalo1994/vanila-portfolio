@@ -7,6 +7,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -257,63 +259,79 @@
       />
     </section>
     <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="text-container">
-                        <p>
-                          Description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://giithub.com'">Live Demo</button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="text-container">
-                      <p>
-                        Description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      </p>
-                    </div>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://giithub.com'">Live Demo</button>
-                    </div>
-                </div>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="swiper-container">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                      </div>
+                      <h2 class="experience-sub-title project-title">Project One</h2>
+                      <div class="text-container">
+                          <p>Description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com'">GitHub</button>
+                          <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://giithub.com'">Live Demo</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                      </div>
+                      <h2 class="experience-sub-title project-title">Project Two</h2>
+                      <div class="text-container">
+                          <p>Description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com'">GitHub</button>
+                          <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://giithub.com'">Live Demo</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <div class="details-container color-container">
+                      <div class="article-container">
+                          <img src="./assets/project-3.png" alt="Project 3" class="project-img">
+                      </div>
+                      <h2 class="experience-sub-title project-title">Project Three</h2>
+                      <div class="text-container">
+                          <p>Description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
+                      <div class="btn-container">
+                          <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com'">GitHub</button>
+                          <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://giithub.com'">Live Demo</button>
+                      </div>
+                  </div>
+              </div>
+              <!-- Add more swiper-slide divs for additional projects -->
+              <div class="swiper-slide">
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img src="./assets/project-3.png" alt="Project 3" class="project-img">
                     </div>
                     <h2 class="experience-sub-title project-title">Project Three</h2>
                     <div class="text-container">
-                      <p>
-                        Description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      </p>
+                        <p>Description of the project. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location,href = 'https://giithub.com'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com'">Live Demo</button>
                     </div>
                 </div>
-            </div>
-        </div>
-        <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-        />
+              </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -343,5 +361,7 @@
       <p>Copyright &#169; 2024 John Doe. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script src="swiper-init.js"></script>
+    </script>
   </body>
 </html>

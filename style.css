@@ -2,6 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+:root {
+  --swiper-navigation-color: rgb(163, 163, 163);
+  --swiper-pagination-color: rgb(53, 53, 53);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -435,5 +440,29 @@ footer{
 footer p {
   text-align: center;
 }
+
+
+/* Carousel */
+
+/* Ensure the container has relative positioning */
+.swiper-container {
+  position: relative;
+  margin: 1rem;
+}
+
+/* Style for the visible slides */
+
+.swiper-container .swiper-button-prev {
+  left: -35px; /* Adjust this value as needed */
+}
+
+.swiper-container .swiper-button-next {
+  right: -35px; /* Adjust this value as needed */
+}
+
+.swiper-pagination {
+  margin-bottom: -2.5rem;
+}
+
 
 
