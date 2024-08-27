@@ -17,6 +17,6 @@ const swiper = new Swiper('.swiper-container', {
         800: {
           slidesPerView: 3,
           spaceBetween: 40,
-        },
-      },
-  });
+        }
+    },
+});
