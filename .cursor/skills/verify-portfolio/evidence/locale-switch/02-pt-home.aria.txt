@@ -1,0 +1,105 @@
+- link "Saltar para o conteúdo principal":
+  - /url: "#main-content"
+- banner:
+  - text: Pedro Robalo
+  - navigation "Primary":
+    - list:
+      - listitem:
+        - link "Início":
+          - /url: /portfolio/pt/
+      - listitem:
+        - link "Trabalho":
+          - /url: /portfolio/pt/trabalho/
+      - listitem:
+        - link "Escrita":
+          - /url: /portfolio/pt/escrita/
+      - listitem:
+        - link "Sobre":
+          - /url: /portfolio/pt/sobre/
+      - listitem:
+        - group "Idioma":
+          - 'link "Idioma: EN"':
+            - /url: /portfolio/
+            - text: EN
+          - text: PT
+- main:
+  - paragraph: Quality Engineering · Automação de Testes
+  - heading "Engenheiro de Software. Qualidade desde o início." [level=1]:
+    - text: Engenheiro de Software.
+    - emphasis: Qualidade
+    - text: desde o início.
+  - paragraph: Gosto de criar sistemas de testes fiáveis para web e mobile e produtos ligados à saúde, com a qualidade presente desde o início — não apenas no fim.
+  - link "Ver trabalho →":
+    - /url: /portfolio/pt/trabalho/
+  - link "Ler escrita →":
+    - /url: /portfolio/pt/escrita/
+  - figure:
+    - img "Retrato de Pedro Robalo"
+  - complementary "Foco":
+    - paragraph: Foco
+    - list:
+      - listitem: Quality Engineering
+      - listitem: Automação de testes
+      - listitem: Produtos com sensibilidade clínica
+  - region "Algumas coisas em que trabalhei":
+    - heading "Algumas coisas em que trabalhei" [level=2]
+    - paragraph: Alguns projetos em que a qualidade faz parte do produto, e não apenas da última verificação.
+    - link "Ver todo o trabalho ↗":
+      - /url: /portfolio/pt/trabalho/
+    - article:
+      - paragraph: Caso de estudo em destaque
+      - heading "CUF Prepara" [level=3]:
+        - link "CUF Prepara":
+          - /url: /portfolio/pt/trabalho/cuf-prepara/
+      - paragraph: Preparação personalizada para colonoscopia no Hospital CUF Descobertas
+      - 'figure "Fluxo do produto: Dados clínicos tornam-se num plano fácil de seguir"':
+        - text: Fluxo do produto
+        - strong: Dados clínicos tornam-se num plano fácil de seguir
+      - term: Problema
+      - definition: As pessoas precisam de um plano de preparação claro e temporizado. Instruções genéricas em PDF podem gerar confusão, passos em falta e atrasos evitáveis.
+      - term: Abordagem
+      - definition: Construí um assistente bilingue (PT/EN) que personaliza dieta, medicação e orientações para o dia do exame a partir de dados clínicos, com persistência local, ligações diretas e exportação de calendário (.ics + VALARM).
+      - term: Resultado
+      - definition: Experiência de preparação responsiva com lógica principal testável, cobertura end-to-end e UI consciente de CLS.
+      - list "Tecnologias":
+        - listitem: Vanilla JS (ES modules)
+        - listitem: Vitest
+        - listitem: Playwright
+        - listitem: ESLint
+        - listitem: Prettier
+        - listitem: Husky
+      - link "Ler caso de estudo ↗":
+        - /url: /portfolio/pt/trabalho/cuf-prepara/
+  - region "Algumas coisas que escrevi":
+    - heading "Algumas coisas que escrevi" [level=2]
+    - paragraph: O que fui aprendendo sobre qualidade, testes e sobre entregar software sem dramas desnecessários.
+    - link "Ver toda a escrita ↗":
+      - /url: /portfolio/pt/escrita/
+    - paragraph: Ainda estou a preparar os primeiros textos. Aparecem por aqui em breve.
+  - region "Um pouco sobre mim":
+    - heading "Um pouco sobre mim" [level=2]
+    - paragraph: Comecei na enfermagem — incluindo cuidados intensivos — e passei para a automação de testes em 2021. Desde então, trabalhei em telecomunicações, software industrial e fintech, mas ficou o hábito da saúde de pensar com clareza sobre risco.
+    - paragraph:
+      - link "Sobre ↗":
+        - /url: /portfolio/pt/sobre/
+  - region "Diz olá":
+    - heading "Diz olá" [level=2]
+    - paragraph: A forma mais simples de falar comigo é por email. Também me encontras no GitHub e no LinkedIn.
+    - link "pmrobalo@gmail.com →":
+      - /url: mailto:pmrobalo@gmail.com
+- contentinfo:
+  - paragraph: Estou sempre disponível para falar sobre Quality Engineering, automação de testes ou produtos feitos com cuidado.
+  - list:
+    - listitem:
+      - link "Email · pmrobalo@gmail.com":
+        - /url: mailto:pmrobalo@gmail.com
+    - listitem:
+      - link "GitHub":
+        - /url: https://github.com/PedroRobalo1994
+    - listitem:
+      - link "LinkedIn":
+        - /url: https://www.linkedin.com/in/pedro-robalo-42a39212a/
+    - listitem:
+      - link "Currículo":
+        - /url: /portfolio/assets/docs/PedroRobalo_CV.pdf
+  - paragraph: © 2026 Pedro Robalo. Todos os direitos reservados.

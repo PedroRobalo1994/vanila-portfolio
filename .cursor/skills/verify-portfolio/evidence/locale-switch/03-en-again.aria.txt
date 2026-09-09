@@ -1,0 +1,105 @@
+- link "Skip to main content":
+  - /url: "#main-content"
+- banner:
+  - text: Pedro Robalo
+  - navigation "Primary":
+    - list:
+      - listitem:
+        - link "Home":
+          - /url: /portfolio/
+      - listitem:
+        - link "Work":
+          - /url: /portfolio/work/
+      - listitem:
+        - link "Writing":
+          - /url: /portfolio/writing/
+      - listitem:
+        - link "About":
+          - /url: /portfolio/about/
+      - listitem:
+        - group "Language":
+          - text: EN
+          - 'link "Language: PT"':
+            - /url: /portfolio/pt/
+            - text: PT
+- main:
+  - paragraph: Quality Engineering · Test Automation
+  - heading "Software Engineer. Quality from the start." [level=1]:
+    - text: Software Engineer.
+    - emphasis: Quality
+    - text: from the start.
+  - paragraph: I build reliable test systems across web and mobile, along with healthcare-aware products where quality starts early, not at the finish line.
+  - link "View Work →":
+    - /url: /portfolio/work/
+  - link "Read Writing →":
+    - /url: /portfolio/writing/
+  - figure:
+    - img "Portrait of Pedro Robalo"
+  - complementary "Focus":
+    - paragraph: Focus
+    - list:
+      - listitem: Quality Engineering
+      - listitem: Test automation
+      - listitem: Healthcare-aware products
+  - region "A few things I’ve worked on":
+    - heading "A few things I’ve worked on" [level=2]
+    - paragraph: A few projects where quality is part of the product, not just the final check.
+    - link "See all work ↗":
+      - /url: /portfolio/work/
+    - article:
+      - paragraph: Featured case study
+      - heading "CUF Prepara" [level=3]:
+        - link "CUF Prepara":
+          - /url: /portfolio/work/cuf-prepara/
+      - paragraph: Personalized colonoscopy prep for Hospital CUF Descobertas
+      - 'figure "Product flow: Clinical inputs become a plan patients can follow"':
+        - text: Product flow
+        - strong: Clinical inputs become a plan patients can follow
+      - term: Problem
+      - definition: Patients need a clear, timed prep plan. Generic PDF instructions create confusion, missed steps, and avoidable exam delays.
+      - term: Approach
+      - definition: Built a bilingual (PT/EN) client-side wizard that personalizes diet, medication, and exam-day guidance from clinical inputs, with local persistence, deep links, and calendar export (.ics + VALARM).
+      - term: Outcome
+      - definition: A responsive prep experience with testable core logic, end-to-end coverage, and CLS-conscious UI.
+      - list "Stack":
+        - listitem: Vanilla JS (ES modules)
+        - listitem: Vitest
+        - listitem: Playwright
+        - listitem: ESLint
+        - listitem: Prettier
+        - listitem: Husky
+      - link "Read case study ↗":
+        - /url: /portfolio/work/cuf-prepara/
+  - region "A few things I’ve written":
+    - heading "A few things I’ve written" [level=2]
+    - paragraph: Things I’ve learned about quality, testing, and shipping software without unnecessary drama.
+    - link "See all writing ↗":
+      - /url: /portfolio/writing/
+    - paragraph: I’m still working on the first pieces. They’ll be here soon.
+  - region "A bit about me":
+    - heading "A bit about me" [level=2]
+    - paragraph: I started in nursing — including intensive care — and moved into test automation in 2021. Since then I’ve worked across telecoms, industrial software, and fintech, but the healthcare habit of thinking clearly about risk has stayed with me.
+    - paragraph:
+      - link "About ↗":
+        - /url: /portfolio/about/
+  - region "Say hello":
+    - heading "Say hello" [level=2]
+    - paragraph: The easiest way to reach me is by email. You can also find me on GitHub and LinkedIn.
+    - link "pmrobalo@gmail.com →":
+      - /url: mailto:pmrobalo@gmail.com
+- contentinfo:
+  - paragraph: Always happy to talk about Quality Engineering, test automation, or thoughtful product work.
+  - list:
+    - listitem:
+      - link "Email · pmrobalo@gmail.com":
+        - /url: mailto:pmrobalo@gmail.com
+    - listitem:
+      - link "GitHub":
+        - /url: https://github.com/PedroRobalo1994
+    - listitem:
+      - link "LinkedIn":
+        - /url: https://www.linkedin.com/in/pedro-robalo-42a39212a/
+    - listitem:
+      - link "Résumé":
+        - /url: /portfolio/assets/docs/PedroRobalo_CV.pdf
+  - paragraph: © 2026 Pedro Robalo. All rights reserved.
