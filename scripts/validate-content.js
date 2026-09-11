@@ -9,22 +9,17 @@ const FRONT_MATTER_OPTIONS = {
   },
 };
 
-const CONTENT_DIRECTORIES = [
-  { directory: 'work', locale: 'en', kind: 'case-study' },
-  { directory: 'writing', locale: 'en', kind: 'writing' },
-  { directory: path.join('pt', 'trabalho'), locale: 'pt', kind: 'case-study' },
-  { directory: path.join('pt', 'escrita'), locale: 'pt', kind: 'writing' },
-];
+const {
+  getContentDirectories,
+  getPermalinkPrefixes,
+} = require('../lib/locale-routes');
+
+const CONTENT_DIRECTORIES = getContentDirectories();
 
 const CONTENT_TYPES = new Set(['article', 'note', 'case-study']);
 const TRANSLATION_KEY_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const DATE_PATTERN = /^(\d{4})-(\d{2})-(\d{2})$/;
-const PERMALINK_PREFIXES = new Map([
-  ['en:case-study', '/work/'],
-  ['pt:case-study', '/pt/trabalho/'],
-  ['en:writing', '/writing/'],
-  ['pt:writing', '/pt/escrita/'],
-]);
+const PERMALINK_PREFIXES = getPermalinkPrefixes();
 
 function hasText(value) {
   return typeof value === 'string' && value.trim().length > 0;
