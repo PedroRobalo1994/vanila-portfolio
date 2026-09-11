@@ -1,7 +1,3 @@
-module.exports = {
-  locale: 'pt',
-  localePath: '/pt/',
-  workPath: 'trabalho/',
-  writingPath: 'escrita/',
-  aboutPath: 'sobre/',
-};
+const { localePageData } = require('../../lib/locale-routes');
+
+module.exports = localePageData('pt');

@@ -1,19 +1,10 @@
 {% set t = i18n[locale] %}
-{% if locale == 'pt' %}
-  {% set homeHref = '/pt/' %}
-  {% set workHref = '/pt/trabalho/' %}
-  {% set writingHref = '/pt/escrita/' %}
-  {% set aboutHref = '/pt/sobre/' %}
-  {% set fallbackLangHref = '/' %}
-  {% set writingIndexOther = '/writing/' %}
-{% else %}
-  {% set homeHref = '/' %}
-  {% set workHref = '/work/' %}
-  {% set writingHref = '/writing/' %}
-  {% set aboutHref = '/about/' %}
-  {% set fallbackLangHref = '/pt/' %}
-  {% set writingIndexOther = '/pt/escrita/' %}
-{% endif %}
+{% set homeHref = locale | homeHref %}
+{% set workHref = locale | sectionHref('work') %}
+{% set writingHref = locale | sectionHref('writing') %}
+{% set aboutHref = locale | sectionHref('about') %}
+{% set fallbackLangHref = t.otherLocale | homeHref %}
+{% set writingIndexOther = t.otherLocale | sectionHref('writing') %}
 {% set langHref = collections.all | languageHref(translationKey, t.otherLocale, fallbackLangHref, writingIndexOther, pageType) %}
 
 <header class="site-header" data-test="site-header">

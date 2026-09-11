@@ -47,3 +47,7 @@ _Avoid_: Blog post
 **Note**:
 A shorter, less formal piece of Writing focused on one observation, update, or developing idea.
 _Avoid_: Blog post
+
+**Locale routing / LocaleRoutes**:
+The config-driven module (`lib/locale-routes.js`) that owns public locale path strings without Eleventy `pathPrefix`: section hrefs (`home`, `work`, `writing`, `about`), content permalink prefixes, language-switch resolution (`languageHref`), and case-study URL lookup (`caseStudyUrl`). Callers (Eleventy filters, content validation, `*.11tydata.js`) adapt to it; they do not redefine the map.
+_Avoid_: Hardcoded `/pt/trabalho/` literals scattered in templates and validators

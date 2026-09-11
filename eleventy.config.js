@@ -1,4 +1,10 @@
 const pluginRss = require('@11ty/eleventy-plugin-rss').default || require('@11ty/eleventy-plugin-rss');
+const {
+  homeHref,
+  sectionHref,
+  languageHref,
+  caseStudyUrl,
+} = require('./lib/locale-routes');
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
@@ -53,28 +59,25 @@ module.exports = function (eleventyConfig) {
     )
   );
 
-  eleventyConfig.addFilter('caseStudyUrl', (collection = [], projectKey, locale) => {
-    const match = collection.find(
-      (item) => item.data.projectKey === projectKey && item.data.locale === locale && item.data.draft !== true
-    );
-    return match ? match.url : null;
-  });
+  eleventyConfig.addFilter('homeHref', (locale) => homeHref(locale));
+
+  eleventyConfig.addFilter('sectionHref', (locale, section) => sectionHref(locale, section));
+
+  eleventyConfig.addFilter('caseStudyUrl', (collection = [], projectKey, locale) =>
+    caseStudyUrl({ caseStudies: collection, projectKey, locale })
+  );
 
   eleventyConfig.addFilter(
     'languageHref',
-    (collection = [], translationKey, otherLocale, fallbackHref, writingIndexHref, pageType) => {
-      if (translationKey) {
-        const match = collection.find(
-          (item) =>
-            item.data.translationKey === translationKey && item.data.locale === otherLocale && item.data.draft !== true
-        );
-        if (match?.url) return match.url;
-        if (pageType === 'writing-detail') return writingIndexHref;
-      } else if (pageType === 'writing-detail') {
-        return writingIndexHref;
-      }
-      return fallbackHref;
-    }
+    (collection = [], translationKey, otherLocale, fallbackHref, writingIndexHref, pageType) =>
+      languageHref({
+        pages: collection,
+        translationKey,
+        targetLocale: otherLocale,
+        pageType,
+        fallbackHref,
+        writingIndexOther: writingIndexHref,
+      })
   );
 
   eleventyConfig.addCollection('caseStudies', (collectionApi) =>
