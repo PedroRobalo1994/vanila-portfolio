@@ -12,3 +12,6 @@ Thumbs.db
 .env
 .env.local
 .env.*.local
+
+# Verification skill runtime (keep evidence committed)
+.cursor/skills/verify-portfolio/.run/
